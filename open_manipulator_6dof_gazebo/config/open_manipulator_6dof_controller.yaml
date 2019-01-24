@@ -1,4 +1,4 @@
-open_manipulator:
+open_manipulator_6dof:
   # Publish all joint states -----------------------------------
   joint_state_controller:
     type: joint_state_controller/JointStateController

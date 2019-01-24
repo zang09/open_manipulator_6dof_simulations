@@ -50,14 +50,14 @@ include_directories(
   ${GAZEBO_INCLUDE_DIRS}
 )
 
-add_executable(gripper_sub_publisher2 src/gripper_sub_publisher2.cpp)
-add_dependencies(gripper_sub_publisher2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(gripper_sub_publisher2 ${catkin_LIBRARIES})
+add_executable(gripper_6dof_sub_publisher src/gripper_6dof_sub_publisher.cpp)
+add_dependencies(gripper_6dof_sub_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(gripper_6dof_sub_publisher ${catkin_LIBRARIES})
 
 ################################################################################
 # Install
 ################################################################################
-install(TARGETS gripper_sub_publisher2
+install(TARGETS gripper_6dof_sub_publisher
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

@@ -17,6 +17,6 @@
                                                gripper_sub_position"/>
 
   <!-- Run gripper sub position publisher -->
-  <node name="gripper_sub_publisher2" pkg="open_manipulator_6dof_gazebo" type="gripper_sub_publisher2" output="screen" ns="$(arg use_robot_name)"/>
+  <node name="gripper_6dof_sub_publisher" pkg="open_manipulator_6dof_gazebo" type="gripper_6dof_sub_publisher" output="screen" ns="$(arg use_robot_name)"/>
 
 </launch>
